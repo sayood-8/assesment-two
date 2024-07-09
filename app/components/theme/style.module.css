@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.division {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 5px; 
+    border-width: 5px;
+    max-width: fit-content;
+    
+
+  }
+
+  .dark{
+    background-color: violet;
+  
+  }
+
+  .light{
+    background-color: white;
+  }
+
+
+  
