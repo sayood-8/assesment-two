@@ -1,13 +1,16 @@
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "./context";
 import styles from "./style.module.css";
-import classNames from 'classnames'
+
+
 
 export default function content(){
-    const theme = "styles." + useContext(ThemeContext);
+    const theme = useContext(ThemeContext) ;
+    console.log(theme);
+    const contentClasses = ` ${theme === "dark" ? styles.dark : styles.light}`;
     return(
         <>
-        <div className = {theme}>
+        <div className = {contentClasses}>
         <div className = {styles.division}  >
             <div>this is the test html content </div>
             <p>Context hook</p>
